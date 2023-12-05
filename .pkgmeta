@@ -12,5 +12,5 @@ externals:
   libs/AceGUI-3.0: https://repos.wowace.com/wow/ace3/tags/Release-r960/AceGUI-3.0
   libs/AceConfig-3.0: https://repos.wowace.com/wow/ace3/tags/Release-r960/AceConfig-3.0
   libs/LibKeyBound-1.0: https://repos.wowace.com/wow/libkeybound-1-0/tags/r95%20release/LibKeyBound-1.0
-  libs/LibDBIcon-1.0: https://repos.wowace.com/wow/libdbicon-1-0/trunk/LibDBIcon-1.0?r=15
-  libs/LibWindow-1.1: https://repos.wowace.com/wow/libwindow-1-1/trunk/LibWindow-1.1?r=5
+  libs/LibDBIcon-1.0: https://repos.wowace.com/wow/libdbicon-1-0/trunk/LibDBIcon-1.0@15
+  libs/LibWindow-1.1: https://repos.wowace.com/wow/libwindow-1-1/trunk/LibWindow-1.1@5

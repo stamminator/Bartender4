@@ -1,0 +1,30 @@
+name: Package and release
+
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - 'wotlk-3.3.5'
+      - 'testbuild/**'
+
+jobs:
+
+  Release:
+
+    runs-on: ubuntu-latest
+
+    env:
+      CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+      
+    steps:
+      - name: Clone project
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # gets entire git history, needed for automatic changelogs
+
+      - name: Run WoW Packager
+        uses: BigWigsMods/packager@v2
+        with:
+          args: -L -p 13501 # use real CurseForge project's id to pull localization
+          
